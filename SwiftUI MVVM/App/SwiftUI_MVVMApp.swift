@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SwiftUI_MVVMApp: App {
+    @StateObject var appViewModel = AppViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppNavigationView(viewModel: appViewModel)
+                .task {
+                    await appViewModel.loader.loadIfNeeded()
+                }
         }
     }
 }
