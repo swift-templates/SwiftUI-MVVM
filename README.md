@@ -18,5 +18,5 @@ Contains the actual implementation to consume data from the backend
 
 ## Backend
 This project makes use of the open API of https://www.tabnews.com.br a brazilian, [open source](https://github.com/filipedeschamps/tabnews.com.br), 
-reddit-like, news/critique sharing/discussion board by @filipedeschamps.
+reddit-like, news/critique sharing/discussion board by [@filipedeschamps](https://github.com/filipedeschamps).
 
